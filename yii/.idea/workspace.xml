@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a476076a-79c3-4fd2-bfe9-143f58f527ec" name="Default" comment="" />
+    <ignored path="yii.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/../content/protected/view/index.html" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1414474325591" ignored="false" />
+    <file path="$PROJECT_DIR$/../content/controller/index.html" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1414496164381" ignored="false" />
+    <file path="$PROJECT_DIR$/../content/controller/handleContent.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1414479578429" ignored="false" />
+    <file path="$PROJECT_DIR$/../content/controller/handleImg.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1414479975040" ignored="false" />
+    <file path="/index.html" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1414496317365" ignored="false" />
+    <file path="$PROJECT_DIR$/../content/index.html" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1414496695674" ignored="false" />
+    <file path="/*.regexp" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415243935270" ignored="false" />
+    <file path="/IndexController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415667571423" ignored="false" />
+    <file path="/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418372025914" ignored="false" />
+    <file path="/AboutController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415176963441" ignored="false" />
+    <file path="/ArticleController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415176949095" ignored="false" />
+    <file path="/ArticleListController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415176954350" ignored="false" />
+    <file path="/CategoryController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415176958184" ignored="false" />
+    <file path="/a.dummy" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418348903975" ignored="false" />
+    <file path="/blog.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415177755506" ignored="false" />
+    <file path="/LoginController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415253721277" ignored="false" />
+    <file path="/LoginForm.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415245223499" ignored="false" />
+    <file path="/CCaptchaAction.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415237414046" ignored="false" />
+    <file path="/admin.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415243060088" ignored="false" />
+    <file path="/User.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415263252110" ignored="false" />
+    <file path="/UserIdentity.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415245862979" ignored="false" />
+    <file path="/AdminModule.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415252223792" ignored="false" />
+    <file path="/DefaultController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415253512948" ignored="false" />
+    <file path="/copy.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415254270020" ignored="false" />
+    <file path="/UserController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415261633520" ignored="false" />
+    <file path="/public.css" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415262540668" ignored="false" />
+    <file path="$PROJECT_DIR$/../myweb/app/protected/config/main.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415325960966" ignored="false" />
+    <file path="$PROJECT_DIR$/../myweb/app/protected/modules/admin/views/login/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415326025615" ignored="false" />
+    <file path="$PROJECT_DIR$/../myweb/app/protected/modules/admin/controllers/BangdingController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415326214736" ignored="false" />
+    <file path="/BangdingController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415326106045" ignored="false" />
+    <file path="$PROJECT_DIR$/../wechattest/bangding.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415601810352" ignored="false" />
+    <file path="/bangding.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415601990437" ignored="false" />
+    <file path="$PROJECT_DIR$/../wechattest/new.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415338062744" ignored="false" />
+    <file path="$PROJECT_DIR$/../emailCampaigns/setupLevel.html" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415340513230" ignored="false" />
+    <file path="/setupLevel.html" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415339759992" ignored="false" />
+    <file path="$PROJECT_DIR$/../emailCampaigns/hello.html" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415339995318" ignored="false" />
+    <file path="$PROJECT_DIR$/../wx_sample.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415351657062" ignored="false" />
+    <file path="$PROJECT_DIR$/../weixin/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415604511378" ignored="false" />
+    <file path="$PROJECT_DIR$/../weixin/giy.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415587962420" ignored="false" />
+    <file path="/giy.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415587829142" ignored="false" />
+    <file path="$PROJECT_DIR$/../wechattest/send.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415588122203" ignored="false" />
+    <file path="/send.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415588014323" ignored="false" />
+    <file path="$PROJECT_DIR$/../wechattest/receive.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415588105977" ignored="false" />
+    <file path="/receive.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415588082097" ignored="false" />
+    <file path="$PROJECT_DIR$/../weixin/bangding.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415604255010" ignored="false" />
+    <file path="$PROJECT_DIR$/../weixin/1.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415606749782" ignored="false" />
+    <file path="/1.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415606717114" ignored="false" />
+    <file path="$PROJECT_DIR$/../weixin/http.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415612153621" ignored="false" />
+    <file path="$PROJECT_DIR$/../weixin/test.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415612153621" ignored="false" />
+    <file path="$PROJECT_DIR$/../myweb/app/protected/controllers/IndexController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415667584434" ignored="false" />
+    <file path="$PROJECT_DIR$/../myweb/app/protected/views/index/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415675829357" ignored="false" />
+    <file path="E:/BaiduYunDownload/微信开发分享/微信公众平台开发-功能整合源代码/状态记录做法/thinkshare.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415675459969" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/Rar$DIa0.599/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1415780178351" ignored="false" />
+    <file path="$PROJECT_DIR$/../blog/protected/controllers/SiteController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417572446922" ignored="false" />
+    <file path="$PROJECT_DIR$/../blog/protected/views/user/view.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417572601370" ignored="false" />
+    <file path="$PROJECT_DIR$/../blog/protected/config/main.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417573351321" ignored="false" />
+    <file path="$PROJECT_DIR$/../blog/protected/config/web.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417573111764" ignored="false" />
+    <file path="/main.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417573190107" ignored="false" />
+    <file path="$PROJECT_DIR$/../blog/protected/components/wechat.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417576798598" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/3/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418366326793" ignored="false" />
+    <file path="$PROJECT_DIR$/../coy-xcrm/app/protected/modules/api/components/ZurmoApiHelper.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417586287668" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/1/mobile.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417593742258" ignored="false" />
+    <file path="/mobile.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417593736694" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/1/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418366187837" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/2/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418604468903" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/2/index2.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1417594309145" ignored="false" />
+    <file path="F:/hello/blog/protected/controllers/ApiController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418367435090" ignored="false" />
+    <file path="/ApiController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418346826243" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/5/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418371427398" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/5/weixin.class.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418347893155" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/5/weixin.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418364404128" ignored="false" />
+    <file path="/weixin.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418372277769" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/5/mysql.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418353108616" ignored="false" />
+    <file path="/mysql.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418352961780" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/5/checkmobile.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418354947028" ignored="false" />
+    <file path="/checkmobile.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418354896355" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/5/comparcode.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418355138218" ignored="false" />
+    <file path="$PROJECT_DIR$/../weixin-master/controllers/WechatCallbackapiController.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418365520149" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/4/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418366084648" ignored="false" />
+    <file path="$PROJECT_DIR$/../158497182/2/weixin.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418372350303" ignored="false" />
+    <file path="$PROJECT_DIR$/../wechatbind/index.php" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418372742498" ignored="false" />
+    <file path="/Dummy.txt" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418604824273" ignored="false" />
+    <file path="F:/hello/.idea/workspace.xml" changelist="a476076a-79c3-4fd2-bfe9-143f58f527ec" time="1418604841266" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="yii" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AdminModule.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/AdminModule.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="34" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CWebModule.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/web/CWebModule.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="29" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/ArticleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CModule.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/base/CModule.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="15" selection-start="547" selection-end="547" vertical-scroll-proportion="9.935484">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="10" selection-start="2160" selection-end="2160" vertical-scroll-proportion="-19.903225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.419355">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/AboutController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/controllers/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="37" selection-start="203" selection-end="233" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/myapp/protected/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/components/UserIdentity.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/views/login/index.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/AdminModule.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/controllers/DefaultController.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/views/default/copy.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/views/default/index.php" />
+        <option value="$PROJECT_DIR$/myapp/assets/admin/css/admin.css" />
+        <option value="$PROJECT_DIR$/myapp/assets/admin/css/public.css" />
+        <option value="$PROJECT_DIR$/myapp/protected/models/User.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/views/user/index.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/myapp/protected/modules/admin/controllers/LoginController.php" />
+        <option value="$USER_HOME$/Desktop/index.php" />
+        <option value="$PROJECT_DIR$/../blog - 副本/protected/config/main.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="12" />
+    <option name="y" value="14" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wechatbind" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\yii\myapp\protected\modules\admin\views\user" />
+      <recent name="D:\WWW\yii\myapp\protected\modules\admin\views\default" />
+      <recent name="D:\WWW\yii\myapp\protected\modules\admin" />
+      <recent name="D:\WWW\yii\myapp\protected\modules" />
+      <recent name="D:\WWW\yii\myapp\assets\admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WWW\yii\myapp\protected\modules\admin\views\login" />
+      <recent name="D:\WWW\yii\myapp\protected\views\index" />
+      <recent name="D:\WWW\yii\test\protected\modules\EmailCampaigns\controllers" />
+      <recent name="D:\WWW\yii\test\protected\modules" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a476076a-79c3-4fd2-bfe9-143f58f527ec" name="Default" comment="" />
+      <created>1414113133458</created>
+      <updated>1414113133458</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="12" y="14" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15795091" sideWeight="0.7385475" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26145253" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myapp/protected/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="3" selection-start="757" selection-end="757" vertical-scroll-proportion="-15.645162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/models/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/ArticleListController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/components/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/controllers/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="203" selection-end="233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/modules/admin/AdminModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/CWebModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/base/CModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="15" selection-start="547" selection-end="547" vertical-scroll-proportion="9.935484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="10" selection-start="2160" selection-end="2160" vertical-scroll-proportion="-19.903225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.419355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/AboutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/protected/controllers/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
