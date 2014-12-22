@@ -1809,3 +1809,458 @@ Stack trace:
 #3 D:\WWW\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #4 D:\WWW\blog\index.php(21): CApplication->run()
 #5 {main} REQUEST_URI=/blog/index.php/user/1
+2014/12/17 15:24:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'wechat'' in D:\WWW\wechatbind\yii\framework\db\CDbConnection.php:348
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\db\CDbConnection.php(297): CDbConnection->open()
+#1 D:\WWW\wechatbind\yii\framework\db\CDbConnection.php(275): CDbConnection->setActive(true)
+#2 D:\WWW\wechatbind\yii\framework\base\CModule.php(372): CDbConnection->init()
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(426): CModule->getComponent('db')
+#4 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(607): CApplication->getDb()
+#5 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(2236): CActiveRecord->getDbConnection()
+#6 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(371): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\WWW\wechatbind\yii\framework\web\CActiveDataProvider.php(72): CActiveRecord::model('Post')
+#8 D:\WWW\wechatbind\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#10 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 D:\WWW\wechatbind\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\WWW\wechatbind\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 D:\WWW\wechatbind\yii\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#14 D:\WWW\wechatbind\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\WWW\wechatbind\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\WWW\wechatbind\yii\framework\web\CController.php(283): CFilterChain->run()
+#17 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('')
+#19 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('')
+#20 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#21 D:\WWW\wechatbind\blog\index.php(21): CApplication->run()
+#22 {main} REQUEST_URI=/wechatbind/blog/index.php
+2014/12/17 15:29:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/user/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/17 15:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "TAG".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('TAG')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('TAG')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/TAG/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/TAG/1
+2014/12/17 15:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "TAG".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('TAG')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('TAG')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/TAG/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/TAG/1
+2014/12/17 15:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/user/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/17 15:50:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/user/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/18 17:10:53 [error] [exception.CException] exception 'CException' with message 'ApiController does not have a method named "findByPk".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(68): CComponent->__call('findByPk', Array)
+#1 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(68): ApiController->findByPk('1')
+#2 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionView()
+#3 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('view')
+#7 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/view')
+#8 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#9 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/18 17:44:49 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:45:34 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:45:36 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:45:37 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:45:40 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:00 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:01 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:02 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:02 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:02 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:03 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:03 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/
+2014/12/18 17:47:11 [error] [exception.CException] exception 'CException' with message 'Property "ApiController._module" is not defined.' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(25): CComponent->__get('_module')
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(253): ApiController->getModule()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('list')
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/list')
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#6 {main} REQUEST_URI=/wechatbind/blog/index.php/api/view
+2014/12/19 10:57:58 [error] [exception.CException] exception 'CException' with message 'User does not have a method named "validatePassword".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(213): CComponent->__call('validatePasswor...', Array)
+#1 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): CActiveRecord->__call('validatePasswor...', Array)
+#2 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): User->validatePassword('')
+#3 D:\WWW\wechatbind\blog\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#4 D:\WWW\wechatbind\yii\framework\validators\CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 D:\WWW\wechatbind\yii\framework\validators\CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\WWW\wechatbind\yii\framework\base\CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\WWW\wechatbind\yii\framework\web\widgets\CActiveForm.php(745): CModel->validate(NULL)
+#8 D:\WWW\wechatbind\blog\protected\controllers\SiteController.php(84): CActiveForm::validate(Object(LoginForm))
+#9 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('login')
+#14 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/login')
+#15 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#16 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#17 {main} REQUEST_URI=/wechatbind/blog/index.php/site/login
+2014/12/19 10:58:01 [error] [exception.CException] exception 'CException' with message 'User does not have a method named "validatePassword".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(213): CComponent->__call('validatePasswor...', Array)
+#1 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): CActiveRecord->__call('validatePasswor...', Array)
+#2 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): User->validatePassword('demo')
+#3 D:\WWW\wechatbind\blog\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#4 D:\WWW\wechatbind\yii\framework\validators\CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 D:\WWW\wechatbind\yii\framework\validators\CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\WWW\wechatbind\yii\framework\base\CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\WWW\wechatbind\blog\protected\controllers\SiteController.php(93): CModel->validate()
+#8 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('login')
+#13 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/login')
+#14 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/wechatbind/blog/index.php/site/login
+2014/12/19 10:58:02 [error] [exception.CException] exception 'CException' with message 'User does not have a method named "validatePassword".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(213): CComponent->__call('validatePasswor...', Array)
+#1 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): CActiveRecord->__call('validatePasswor...', Array)
+#2 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): User->validatePassword('demo')
+#3 D:\WWW\wechatbind\blog\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#4 D:\WWW\wechatbind\yii\framework\validators\CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 D:\WWW\wechatbind\yii\framework\validators\CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\WWW\wechatbind\yii\framework\base\CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\WWW\wechatbind\yii\framework\web\widgets\CActiveForm.php(745): CModel->validate(NULL)
+#8 D:\WWW\wechatbind\blog\protected\controllers\SiteController.php(84): CActiveForm::validate(Object(LoginForm))
+#9 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('login')
+#14 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/login')
+#15 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#16 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#17 {main} REQUEST_URI=/wechatbind/blog/index.php/site/login
+2014/12/19 10:58:58 [error] [exception.CException] exception 'CException' with message 'User does not have a method named "validatePassword".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(213): CComponent->__call('validatePasswor...', Array)
+#1 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): CActiveRecord->__call('validatePasswor...', Array)
+#2 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): User->validatePassword('demo')
+#3 D:\WWW\wechatbind\blog\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#4 D:\WWW\wechatbind\yii\framework\validators\CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 D:\WWW\wechatbind\yii\framework\validators\CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\WWW\wechatbind\yii\framework\base\CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\WWW\wechatbind\blog\protected\controllers\SiteController.php(93): CModel->validate()
+#8 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('login')
+#13 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/login')
+#14 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/wechatbind/blog/index.php/site/login
+2014/12/19 11:06:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('post/user')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/post/user
+2014/12/19 11:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/user/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/19 11:11:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/user/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/19 15:42:52 [error] [php] include(Item.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\WWW\wechatbind\yii\framework\YiiBase.php:396)
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(89): spl_autoload_call()
+#1 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionCreate()
+#2 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams()
+#3 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#4 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#5 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#6 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#7 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#8 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/create/user
+2014/12/19 15:57:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/user/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/19 15:58:10 [error] [exception.CException] exception 'CException' with message 'User does not have a method named "validatePassword".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(213): CComponent->__call('validatePasswor...', Array)
+#1 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): CActiveRecord->__call('validatePasswor...', Array)
+#2 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): User->validatePassword('')
+#3 D:\WWW\wechatbind\blog\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#4 D:\WWW\wechatbind\yii\framework\validators\CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 D:\WWW\wechatbind\yii\framework\validators\CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\WWW\wechatbind\yii\framework\base\CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\WWW\wechatbind\yii\framework\web\widgets\CActiveForm.php(745): CModel->validate(NULL)
+#8 D:\WWW\wechatbind\blog\protected\controllers\SiteController.php(84): CActiveForm::validate(Object(LoginForm))
+#9 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('login')
+#14 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/login')
+#15 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#16 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#17 {main} REQUEST_URI=/wechatbind/blog/index.php/site/login
+2014/12/19 15:58:12 [error] [exception.CException] exception 'CException' with message 'User does not have a method named "validatePassword".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\db\ar\CActiveRecord.php(213): CComponent->__call('validatePasswor...', Array)
+#1 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): CActiveRecord->__call('validatePasswor...', Array)
+#2 D:\WWW\wechatbind\blog\protected\components\UserIdentity.php(21): User->validatePassword('demo')
+#3 D:\WWW\wechatbind\blog\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#4 D:\WWW\wechatbind\yii\framework\validators\CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 D:\WWW\wechatbind\yii\framework\validators\CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\WWW\wechatbind\yii\framework\base\CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\WWW\wechatbind\blog\protected\controllers\SiteController.php(93): CModel->validate()
+#8 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('login')
+#13 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/login')
+#14 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/wechatbind/blog/index.php/site/login
+2014/12/19 16:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "weixin".' in D:\WWW\wechatbind\yii\framework\web\CWebApplication.php:332
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('weixin')
+#1 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/wechatbind/blog/index.php/weixin
+2014/12/22 09:35:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\WWW\wechatbind\yii\framework\web\CController.php:477
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(262): CController->missingAction('user')
+#1 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('user')
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/user/1')
+#3 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:37:03 [error] [php] Invalid argument supplied for foreach() (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:114)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:37:04 [error] [php] Invalid argument supplied for foreach() (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:114)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:38:01 [error] [php] Invalid argument supplied for foreach() (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:114)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:38:46 [error] [php] Invalid argument supplied for foreach() (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:117)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:43:25 [error] [php] Invalid argument supplied for foreach() (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:117)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:44:18 [error] [php] Invalid argument supplied for foreach() (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:117)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:49:52 [error] [exception.CException] exception 'CException' with message 'ApiController does not have a method named "findByPk".' in D:\WWW\wechatbind\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(112): CComponent->__call('findByPk', Array)
+#1 D:\WWW\wechatbind\blog\protected\controllers\ApiController.php(112): ApiController->findByPk('1')
+#2 D:\WWW\wechatbind\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionUpdate()
+#3 D:\WWW\wechatbind\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 D:\WWW\wechatbind\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 D:\WWW\wechatbind\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): CController->run('update')
+#7 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('api/update')
+#8 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#9 D:\WWW\wechatbind\blog\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/wechatbind/blog/index.php/api/user/1
+2014/12/22 09:52:27 [error] [php] Use of undefined constant is_null - assumed 'is_null' (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:137)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/comment/1
+2014/12/22 09:53:12 [error] [php] Use of undefined constant is_null - assumed 'is_null' (D:\WWW\wechatbind\blog\protected\controllers\ApiController.php:138)
+Stack trace:
+#0 D:\WWW\wechatbind\yii\framework\web\CController.php(278): ApiController->runAction()
+#1 D:\WWW\wechatbind\yii\framework\web\CController.php(257): ApiController->runActionWithFilters()
+#2 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(328): ApiController->run()
+#3 D:\WWW\wechatbind\yii\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#4 D:\WWW\wechatbind\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#5 D:\WWW\wechatbind\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/wechatbind/blog/index.php/api/comment/1

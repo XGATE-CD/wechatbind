@@ -111,8 +111,8 @@ class SiteController extends Controller
         $headers = array(
             'Content-Type: application/json',
             'Accept: application/json',
-            'HTTP_X_FIREALS_USERNAME:' . 'demo',
-            'HTTP_X_FIREALS_PASSWORD:' . 'demo',
+            'HTTP_X_USERNAME:' . 'demo',//_FIREALS
+            'HTTP_X_PASSWORD:' . 'demo',
         );
         $data = array();
         $data['touser'] = 'o2Rmrt9B49oJbITFEpNxTaMUVUSw';
@@ -120,10 +120,11 @@ class SiteController extends Controller
         $data['text']['content'] = 'From SIna hello';
 
         //  echo 'The link is: ' . 'http://sl.shadela.com/index.php?r=api/login' . '<br>';
-        $response = $this->createApiCall('https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=_c8I-97j0_EZ1BQE5AU5ktTWw4vAXIkN6DRZ4Y9uQLpNj8KzjquE1ivJjxFTZIZE0drENHKeeMl_wph7_HiDXEJJXK_cNHyP5GDDEGhowYQ', 'POST', $headers, $data);//http://sl.shadela.com/index.php?r=api/login
-        //$response = json_decode($response, true);
+       // $response = $this->createApiCall('https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=_c8I-97j0_EZ1BQE5AU5ktTWw4vAXIkN6DRZ4Y9uQLpNj8KzjquE1ivJjxFTZIZE0drENHKeeMl_wph7_HiDXEJJXK_cNHyP5GDDEGhowYQ', 'POST', $headers, $data);//http://sl.shadela.com/index.php?r=api/login
+        $response = $this->createApiCall('http://127.0.0.1/wechatbind/blog/index.php/api/user/1', 'put', $headers, $data);//http://sl.shadela.com/index.php?r=api/login
+        $response = json_decode($response, true);
 
-        var_dump($response);
+        //var_dump($response);
     //    print_r($response);
 
     }
@@ -137,9 +138,9 @@ class SiteController extends Controller
 
         $handle = curl_init();
         curl_setopt($handle, CURLOPT_URL, $url);//这是你想用PHP取回的URL地址。你也可以在用curl_init()函数初始化时设置这个选项。
-        curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($handle, CURLOPT_HEADER, true);
-        curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);//
+        curl_setopt($handle, CURLOPT_HEADER, true);//如果你想把一个头包含在输出中，设置这个选项为一个非零值。
+        curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);//输出内容为字符串
         curl_setopt($handle, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
 
@@ -148,7 +149,7 @@ class SiteController extends Controller
             case 'GET':
                 break;
             case 'POST':
-                curl_setopt($handle, CURLOPT_POST, true);
+                curl_setopt($handle, CURLOPT_POST, true);//允许接收post数据
                 curl_setopt($handle, CURLOPT_POSTFIELDS, http_build_query($data));// 传递一个作为HTTP “POST”操作的所有数据的字符串。
                 break;
             case 'PUT':
