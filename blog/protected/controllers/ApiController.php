@@ -21,11 +21,7 @@ class ApiController extends Controller
 
         return array();
     }
-//    public function getModule()
-//    {
-//        return $this->_module;
-//
-//    }
+
     // Actions
     public function actionList()
     {
