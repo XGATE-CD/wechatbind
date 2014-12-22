@@ -10,12 +10,5 @@ $config=dirname(__FILE__).'/protected/config/main.php';
  defined('YII_DEBUG') or define('YII_DEBUG',true);
 
 require_once($yii);
-//Yii::createWebApplication($config)->run();
-$app = Yii::createWebApplication($config);
-//dump($app);
-//dump(yii::getPathOfAlias('application'));
-//$runtime = yii::getPathOfAlias('application.runtime');//运行结果：'D:\\WWW\\blog\\protected\\runtime'
-//$runtime = yii::getPathOfAlias('ext');//运行结果：'D:\\WWW\\blog\\protected\\extensions'
-//$runtime = yii::getPathOfAlias('webroot');//运行结果：'D:/WWW/blog'
-//dump($runtime);
-$app->run();
+Yii::createWebApplication($config)->run();
+
