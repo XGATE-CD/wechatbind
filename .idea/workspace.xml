@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="826d602f-20ae-48f5-abe6-73a44e87d27e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/protected/controllers/ApiController.php" afterPath="$PROJECT_DIR$/blog/protected/controllers/ApiController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/blog/protected/controllers/SiteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wechatbind.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="826d602f-20ae-48f5-abe6-73a44e87d27e" time="1419218976428" ignored="false" />
+    <file path="/Dummy.txt" changelist="826d602f-20ae-48f5-abe6-73a44e87d27e" time="1419219010705" ignored="false" />
     <file path="/ApiController.php" changelist="826d602f-20ae-48f5-abe6-73a44e87d27e" time="1419213377370" ignored="false" />
     <file path="/TestController.php" changelist="826d602f-20ae-48f5-abe6-73a44e87d27e" time="1418974290116" ignored="false" />
     <file path="/main.php" changelist="826d602f-20ae-48f5-abe6-73a44e87d27e" time="1418978999040" ignored="false" />
@@ -33,11 +34,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApiController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ApiController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/protected/controllers/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="40" selection-start="1533" selection-end="1533" vertical-scroll-proportion="1.3308128">
-              <folding />
+            <state line="78" column="5" selection-start="2142" selection-end="2142" vertical-scroll-proportion="-3.580645">
+              <folding>
+                <element signature="e#2353#2393#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +48,7 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="90" selection-start="1921" selection-end="1921" vertical-scroll-proportion="-19.870968">
+            <state line="67" column="90" selection-start="1921" selection-end="1921" vertical-scroll-proportion="-26.258064">
               <folding />
             </state>
           </provider>
@@ -54,7 +57,53 @@
       <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/protected/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="102" selection-start="3551" selection-end="3551" vertical-scroll-proportion="-87.29032">
+            <state line="142" column="49" selection-start="4218" selection-end="4428" vertical-scroll-proportion="-16.64516">
+              <folding>
+                <element signature="e#807#843#0" expanded="false" />
+                <element signature="n#actionError#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#actionContact#0;n#SiteController#0;n#!!top" expanded="false" />
+                <element signature="n#actionLogin#0;n#SiteController#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple_html_dom.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/源代码/历史上的今天/77_history/simple_html_dom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.193548">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://D:/源代码/历史上的今天/77_history/history.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/源代码/历史上的今天/77_history/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="51.064518">
+              <folding>
+                <marker date="1392643658000" expanded="true" signature="2521:2710" placeholder="..." />
+                <marker date="1392643658000" expanded="true" signature="2987:3161" placeholder="..." />
+                <marker date="1392643658000" expanded="true" signature="3365:3616" placeholder="..." />
+                <marker date="1392643658000" expanded="true" signature="3588:3609" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/protected/controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="48.967743">
               <folding />
             </state>
           </provider>
@@ -91,6 +140,7 @@
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -499,11 +549,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -586,18 +636,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog/protected/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/protected/models/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="9" selection-start="3745" selection-end="3745" vertical-scroll-proportion="0.21945137" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/protected/controllers/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -663,28 +701,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/protected/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="97.935486">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="102" selection-start="3551" selection-end="3551" vertical-scroll-proportion="-87.29032">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="48.967743">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="90" selection-start="1921" selection-end="1921" vertical-scroll-proportion="-19.870968">
+        <state line="67" column="90" selection-start="1921" selection-end="1921" vertical-scroll-proportion="-26.258064">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/protected/controllers/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="40" selection-start="1533" selection-end="1533" vertical-scroll-proportion="1.3308128">
+        <state line="78" column="5" selection-start="2142" selection-end="2142" vertical-scroll-proportion="-3.580645">
+          <folding>
+            <element signature="e#2353#2393#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="49" selection-start="4218" selection-end="4428" vertical-scroll-proportion="-16.64516">
+          <folding>
+            <element signature="e#807#843#0" expanded="false" />
+            <element signature="n#actionError#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionContact#0;n#SiteController#0;n#!!top" expanded="false" />
+            <element signature="n#actionLogin#0;n#SiteController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/源代码/历史上的今天/77_history/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="51.064518">
+          <folding>
+            <marker date="1392643658000" expanded="true" signature="2521:2710" placeholder="..." />
+            <marker date="1392643658000" expanded="true" signature="2987:3161" placeholder="..." />
+            <marker date="1392643658000" expanded="true" signature="3365:3616" placeholder="..." />
+            <marker date="1392643658000" expanded="true" signature="3588:3609" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/源代码/历史上的今天/77_history/simple_html_dom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.193548">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/源代码/历史上的今天/77_history/history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

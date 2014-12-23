@@ -25,7 +25,7 @@ class ApiController extends Controller
     // Actions
     public function actionList()
     {
-          //$this->_checkAuth();
+          $this->_checkAuth();
         // Get the respective model instance
         switch($_GET['model'])
         {
@@ -59,7 +59,7 @@ class ApiController extends Controller
     {
         header("PATH_INFO: demo", true);
         header('Content-Type: json/xml');
-        //$this->_checkAuth();
+        $this->_checkAuth();
         if(!isset($_GET['id']))
             $this->_sendResponse(500, 'ID is missing' );
 
@@ -79,15 +79,15 @@ class ApiController extends Controller
     {
        $model = $_GET['model'];
        $item = new $model;
-        print_r($item) ;exit;
+      //  print_r($item) ;exit;
         foreach($_POST as $var=>$value){
             return $this->_sendResponse(200, CJSON::encode($item));
         }
-        if($item->hasAttribute($var)){
-            return  $item->$var = $value;
-              }else{
-                  $this->_sendResponse(500, 'Parameter Error');
-              }
+//        if($item->hasAttribute($var)){
+//              $item->$var = $value;
+//              }else{
+//                  $this->_sendResponse(500, 'Parameter Error');
+//              }
           if($item->save()){
               $this->_sendResponse(200, CJSON::encode($item));
 
@@ -101,13 +101,8 @@ class ApiController extends Controller
          // $this->_checkAuth();
       //获取 put 方法所带来的 json 数据
           $json = file_get_contents('php://input');
-        //  var_dump($json);
           $put_vars = CJSON::decode($json,true);
-     //  var_dump($put_vars);
-
           $item =$_GET['model']::model()->findByPk($_GET['id']);
-
-       //  var_dump($item);exit;
           if(is_null($item))
               $this->_sendResponse(400, 'No Item found');
 

@@ -13,7 +13,7 @@ class SiteController extends Controller
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
 				'class'=>'CCaptchaAction',
-				'backColor'=>0xFFFFFF,
+//				'backColor'=>0xFFFFFF,
                 'maxLength'=>6,
                 'minLength'=>'6',
 			),
@@ -33,7 +33,25 @@ class SiteController extends Controller
             ),
         );
     }
-
+//    public function actionLogin(){
+//        $model=new LoginForm;
+//        if(isset($_POST['ajax']) && $_POST['ajax']==='login-form'){
+//            echo CActiveForm::validate($model);
+//            Yii::app()->end();
+//        }
+//
+//        if(isset($_POST['LoginForm'])){
+//            $model->attributes=$_POST['LoginForm'];
+//            // validate user input and redirect to the previous page if valid
+//            if($model->validate() &&
+//                $model->validateVerifyCode($this->createAction('captcha')->getVerifyCode()) &&
+//                $model->login()){
+//                $this->redirect(CController::createUrl('default/index'));
+//            }
+//
+//        }
+//        $this->render('login',array('model'=>$model));
+//    }
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -111,8 +129,8 @@ class SiteController extends Controller
         $headers = array(
             'Content-Type: application/json',
             'Accept: application/json',
-            'HTTP_X_USERNAME:' . 'demo',//_FIREALS
-            'HTTP_X_PASSWORD:' . 'demo',
+//            'HTTP_X_USERNAME:' . 'demo',//_FIREALS
+//            'HTTP_X_PASSWORD:' . 'demo',
         );
         $data = array();
         $data['touser'] = 'o2Rmrt9B49oJbITFEpNxTaMUVUSw';
@@ -121,7 +139,7 @@ class SiteController extends Controller
 
         //  echo 'The link is: ' . 'http://sl.shadela.com/index.php?r=api/login' . '<br>';
        // $response = $this->createApiCall('https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=_c8I-97j0_EZ1BQE5AU5ktTWw4vAXIkN6DRZ4Y9uQLpNj8KzjquE1ivJjxFTZIZE0drENHKeeMl_wph7_HiDXEJJXK_cNHyP5GDDEGhowYQ', 'POST', $headers, $data);//http://sl.shadela.com/index.php?r=api/login
-        $response = $this->createApiCall('http://127.0.0.1/wechatbind/blog/index.php/api/user/1', 'put', $headers, $data);//http://sl.shadela.com/index.php?r=api/login
+        $response = $this->createApiCall('http://127.0.0.1/wechatbind/blog/index.php/api/user/1', 'get', $headers, $data);//http://sl.shadela.com/index.php?r=api/login
         $response = json_decode($response, true);
 
         //var_dump($response);
