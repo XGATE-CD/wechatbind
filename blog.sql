@@ -1,32 +1,45 @@
--- phpMyAdmin SQL Dump
--- version phpStudy 2014
--- http://www.phpmyadmin.net
---
--- 主机: localhost
--- 生成日期: 2014 年 12 月 23 日 09:54
--- 服务器版本: 5.5.38-log
--- PHP 版本: 5.3.28
+/*
+Navicat MySQL Data Transfer
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+Source Server         : localhost_3306
+Source Server Version : 50538
+Source Host           : localhost:3306
+Source Database       : blog
 
+Target Server Type    : MYSQL
+Target Server Version : 50538
+File Encoding         : 65001
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+Date: 2015-02-09 09:53:26
+*/
 
---
--- 数据库: `blog`
---
+SET FOREIGN_KEY_CHECKS=0;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Table structure for `tbl_client`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_client`;
+CREATE TABLE `tbl_client` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `mobile` varchar(20) NOT NULL DEFAULT '' COMMENT '手机号码',
+  `code` varchar(7) NOT NULL DEFAULT '' COMMENT '验证码',
+  `openid` varchar(50) NOT NULL DEFAULT '' COMMENT '用户id',
+  `time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '时间',
+  `flag` tinyint(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
 
---
--- 表的结构 `tbl_comment`
---
+-- ----------------------------
+-- Records of tbl_client
+-- ----------------------------
+INSERT INTO `tbl_client` VALUES ('115', '15208245846', '448593', 'op7b7jhPBIn-BuyOorQpWwz333k4', '1421652985', '1');
+INSERT INTO `tbl_client` VALUES ('116', '15902858339', '304347', 'op7b7jnIU-TBdHv_hnLlZutAl6hQ', '1421976365', '0');
 
-CREATE TABLE IF NOT EXISTS `tbl_comment` (
+-- ----------------------------
+-- Table structure for `tbl_comment`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_comment`;
+CREATE TABLE `tbl_comment` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
   `status` int(11) NOT NULL,
@@ -36,49 +49,42 @@ CREATE TABLE IF NOT EXISTS `tbl_comment` (
   `url` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
   `post_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK_comment_post` (`post_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+  KEY `FK_comment_post` (`post_id`),
+  CONSTRAINT `FK_comment_post` FOREIGN KEY (`post_id`) REFERENCES `tbl_post` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- 转存表中的数据 `tbl_comment`
---
+-- ----------------------------
+-- Records of tbl_comment
+-- ----------------------------
+INSERT INTO `tbl_comment` VALUES ('2', 'hello!', '1', '1416880535', 'jack', '1234567@qq.com', '', '2');
 
-INSERT INTO `tbl_comment` (`id`, `content`, `status`, `create_time`, `author`, `email`, `url`, `post_id`) VALUES
-(2, 'hello!', 1, 1416880535, 'jack', '1234567@qq.com', '', 2);
-
--- --------------------------------------------------------
-
---
--- 表的结构 `tbl_lookup`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_lookup` (
+-- ----------------------------
+-- Table structure for `tbl_lookup`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_lookup`;
+CREATE TABLE `tbl_lookup` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `code` int(11) NOT NULL,
   `type` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `position` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- 转存表中的数据 `tbl_lookup`
---
+-- ----------------------------
+-- Records of tbl_lookup
+-- ----------------------------
+INSERT INTO `tbl_lookup` VALUES ('1', 'Draft', '1', 'PostStatus', '1');
+INSERT INTO `tbl_lookup` VALUES ('2', 'Published', '2', 'PostStatus', '2');
+INSERT INTO `tbl_lookup` VALUES ('3', 'Archived', '3', 'PostStatus', '3');
+INSERT INTO `tbl_lookup` VALUES ('4', 'Pending Approval', '1', 'CommentStatus', '1');
+INSERT INTO `tbl_lookup` VALUES ('5', 'Approved', '2', 'CommentStatus', '2');
 
-INSERT INTO `tbl_lookup` (`id`, `name`, `code`, `type`, `position`) VALUES
-(1, 'Draft', 1, 'PostStatus', 1),
-(2, 'Published', 2, 'PostStatus', 2),
-(3, 'Archived', 3, 'PostStatus', 3),
-(4, 'Pending Approval', 1, 'CommentStatus', 1),
-(5, 'Approved', 2, 'CommentStatus', 2);
-
--- --------------------------------------------------------
-
---
--- 表的结构 `tbl_post`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_post` (
+-- ----------------------------
+-- Table structure for `tbl_post`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_post`;
+CREATE TABLE `tbl_post` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
@@ -88,77 +94,49 @@ CREATE TABLE IF NOT EXISTS `tbl_post` (
   `update_time` int(11) DEFAULT NULL,
   `author_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK_post_author` (`author_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+  KEY `FK_post_author` (`author_id`),
+  CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- 转存表中的数据 `tbl_post`
---
+-- ----------------------------
+-- Records of tbl_post
+-- ----------------------------
+INSERT INTO `tbl_post` VALUES ('1', 'Welcome!', 'This blog system is developed using Yii. It is meant to demonstrate how to use Yii to build a complete real-world application. Complete source code may be found in the Yii releases.\n\nFeel free to try this system by writing new posts and posting comments.', 'yii, blog', '2', '1230952187', '1230952187', '1');
+INSERT INTO `tbl_post` VALUES ('2', 'A Test Post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'test', '2', '1230952187', '1230952187', '1');
 
-INSERT INTO `tbl_post` (`id`, `title`, `content`, `tags`, `status`, `create_time`, `update_time`, `author_id`) VALUES
-(1, 'Welcome!', 'This blog system is developed using Yii. It is meant to demonstrate how to use Yii to build a complete real-world application. Complete source code may be found in the Yii releases.\n\nFeel free to try this system by writing new posts and posting comments.', 'yii, blog', 2, 1230952187, 1230952187, 1),
-(2, 'A Test Post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'test', 2, 1230952187, 1230952187, 1);
-
--- --------------------------------------------------------
-
---
--- 表的结构 `tbl_tag`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_tag` (
+-- ----------------------------
+-- Table structure for `tbl_tag`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_tag`;
+CREATE TABLE `tbl_tag` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `frequency` int(11) DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- 转存表中的数据 `tbl_tag`
---
+-- ----------------------------
+-- Records of tbl_tag
+-- ----------------------------
+INSERT INTO `tbl_tag` VALUES ('1', 'yii', '1');
+INSERT INTO `tbl_tag` VALUES ('2', 'blog', '1');
+INSERT INTO `tbl_tag` VALUES ('3', 'test', '1');
 
-INSERT INTO `tbl_tag` (`id`, `name`, `frequency`) VALUES
-(1, 'yii', 1),
-(2, 'blog', 1),
-(3, 'test', 1);
-
--- --------------------------------------------------------
-
---
--- 表的结构 `tbl_user`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_user` (
+-- ----------------------------
+-- Table structure for `tbl_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_user`;
+CREATE TABLE `tbl_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
-  `email` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
   `profile` text COLLATE utf8_unicode_ci,
+  `mobile` varchar(12) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- 转存表中的数据 `tbl_user`
---
-
-INSERT INTO `tbl_user` (`id`, `username`, `password`, `email`, `profile`) VALUES
-(1, 'demo', '$2a$10$JTJf6/XqC94rrOtzuF397OHa4mbmZrVTBOQCmYD9U.obZRUut4BoC', 'webmaster@example.com', NULL);
-
---
--- 限制导出的表
---
-
---
--- 限制表 `tbl_comment`
---
-ALTER TABLE `tbl_comment`
-  ADD CONSTRAINT `FK_comment_post` FOREIGN KEY (`post_id`) REFERENCES `tbl_post` (`id`) ON DELETE CASCADE;
-
---
--- 限制表 `tbl_post`
---
-ALTER TABLE `tbl_post`
-  ADD CONSTRAINT `FK_post_author` FOREIGN KEY (`author_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- ----------------------------
+-- Records of tbl_user
+-- ----------------------------
+INSERT INTO `tbl_user` VALUES ('1', 'demo', '$2a$10$JTJf6/XqC94rrOtzuF397OHa4mbmZrVTBOQCmYD9U.obZRUut4BoC', 'webmaster@example.com', null, null);
