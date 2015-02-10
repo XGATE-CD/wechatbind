@@ -37,11 +37,16 @@ class BindController extends Controller{
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>接收参数并验证开始<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     public function actionCheckMobile(){    //    $result = json_decode($result,true);
         $client = new Client();
+
         $openid = $_POST['openid'];           //获取用户ID
-        $openid = $this->arr2str($openid);     //将数组转换成字符串$openid = 'op7b7jnIU-TBdHv_hnLlZutAl6hQ';
-        $mobile = $_POST['mobile'];           //获取用户输入内容  $mobile = 15902858339;
-        $APPID = $_POST['appId'];             //获取微信appid  $APPID = 'wxe5bed39047a398ab';
-        $APPSECRET = $_POST['appsecret'];     //获取微信appsecret $APPSECRET = '312eb4e031f30a0010cc8f731d799aac';
+       $openid = $this->arr2str($openid);     //将数组转换成字符串
+      //  $openid = 'op7b7jnIU-TBdHv_hnLlZutAl6hQ';
+        $mobile = $_POST['mobile'];           //获取用户输入内容
+      //  $mobile = 55555555;
+        $APPID = $_POST['appId'];             //获取微信appid
+      //  $APPID = 'wxe5bed39047a398ab';
+        $APPSECRET = $_POST['appsecret'];     //获取微信appsecret
+     //   $APPSECRET = '312eb4e031f30a0010cc8f731d799aac';
         if(!empty($_POST)){
             $TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$APPID}&secret={$APPSECRET}";
             $json = file_get_contents($TOKEN_URL);   //执行url地址
@@ -53,6 +58,7 @@ class BindController extends Controller{
             $username = $users['nickname'];      //取出用户的昵称
             $address = $users['city'];           //取出用户的地址
             if(preg_match("/^13[0-9]{1}[0-9]{8}$|15[0-9]{1}[0-9]{8}$|18[0-9]{9}|16[0-9]$/",$mobile)){
+              //  echo "xxxxxxxx11111111";
                 $criteria=new CDbCriteria;
                 $criteria->select='openid,mobile';
                 $criteria->addcondition(array('openid=:openId','mobile=:Mobile'),'or');
@@ -70,16 +76,19 @@ class BindController extends Controller{
                 }
                 $content = "尊敬的:".$username."您好,您的手机号码为：".$mobile.",确认请回复【1】，如果有误，请重新点击【会员专区】->【手机绑定】";
             } else if(preg_match("/^[0-9]{8}$/",$mobile)){
+             //   echo "xxxxxxxx55555555555";
                 $criteria=new CDbCriteria;
                 $criteria->select='openid,mobile';
                 $criteria->addcondition(array('openid=:openId','mobile=:Mobile'),'or');
                 $criteria->params=array(':openId'=>$openid,':Mobile'=>$mobile); //复制给  select mobile,openid from tbl_client where openid=openid or mobile=mobile
                 $weChatUser=Client::model()->find($criteria);
                 if(isset($weChatUser['mobile'])){
-                    $client->updateAll(array('mobile'=>$mobile),'openid=:openId',array(':openId'=>$openid));
+                    $client->updateAll(array('mobile'=>$mobile,'username'=>$username,'address'=>$address),'openid=:openId',array(':openId'=>$openid));
                 }else{
                     $client->mobile = $mobile;
                     $client->openid = $openid;
+                    $client->username = $username;
+                    $client->address = $address;
                     $client->time = time();
                     $client->save();
                 }
@@ -93,11 +102,12 @@ class BindController extends Controller{
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>验证用户是否已经存在开始<<<<<<<<<<<<<<<<<<<<<<<<<
     public function actionBind(){
         if(!empty($_POST)){
+            $a  ='是';
             $openid = $_POST['openid'];
             $criteria=new CDbCriteria;
             $criteria->select='openid,flag';   //select code from tbl_client
-            $criteria->addCondition(array('openid=:openId','flag=1'));
-            $criteria->params=array(':openId'=>$openid[0]); //复制给  select openid,flag from tbl_client where openid=openid and flag=flag
+            $criteria->addCondition(array('openid=:openId','flag=:flag'));
+            $criteria->params=array(':openId'=>$openid[0],':flag'=>$a); //复制给  select openid,flag from tbl_client where openid=openid and flag=flag
             $weChatUser=Client::model()->find($criteria); // $params is not needed
             if($weChatUser) {
                 $result = '您已经是会员了!!!';
@@ -168,7 +178,7 @@ class BindController extends Controller{
                             $mobile = '86'.$mobile;
                             $url = "http://smsc.xgate.com.hk/smshub/sendsms?UserId={$username}&UserPassword={$password}&MessageType=TEXT&MessageLanguage=UTF8&MessageReceiver={$mobile}&MessageBody={$message}";
                         } else if(strlen($mobile) == 8) {
-                            $mobile = '852'.$mobile;
+                            $mobile = '+852'.$mobile;
                             $url = "http://smsc.xgate.com.hk/smshub/sendsms?UserId={$username}&UserPassword={$password}&MessageType=TEXT&MessageLanguage=UTF8&MessageReceiver={$mobile}&MessageBody={$message}";
                         }
                         file_get_contents($url);

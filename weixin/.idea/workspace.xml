@@ -26,9 +26,9 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haoxiang/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="92" selection-start="4430" selection-end="4438" vertical-scroll-proportion="-10.705882" vertical-offset="2061" max-vertical-offset="4175">
+            <state line="83" column="45" selection-start="3637" selection-end="3637" vertical-scroll-proportion="10.617647" vertical-offset="2436" max-vertical-offset="4250">
               <folding>
-                <marker date="1423529943506" expanded="true" signature="4802:5039" placeholder="..." />
+                <marker date="1423536223943" expanded="true" signature="5030:5267" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="BindController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://F:/yii/blog/protected/controllers/BindController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="55" selection-start="8219" selection-end="8219" vertical-scroll-proportion="0.32341" vertical-offset="3111" max-vertical-offset="4575">
+            <state line="113" column="18" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.811908" vertical-offset="1575" max-vertical-offset="4825">
               <folding>
                 <element signature="n#actionIndex#0;n#BindController#0;n#!!top" expanded="false" />
                 <element signature="n#actions#0;n#BindController#0;n#!!top" expanded="false" />
@@ -65,18 +65,18 @@
         <option value="F:/yii/blog/protected/models/LoginForm.php" />
         <option value="F:/yii/blog/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/haoxiang/response1.text" />
-        <option value="$PROJECT_DIR$/haoxiang/index.php" />
         <option value="F:/yii/blog/protected/views/client/view.php" />
         <option value="F:/yii/blog/protected/controllers/ClientController.php" />
         <option value="F:/yii/blog/protected/views/client/admin.php" />
         <option value="F:/yii/blog/protected/controllers/BindController.php" />
+        <option value="$PROJECT_DIR$/haoxiang/index.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="110" />
-    <option name="y" value="49" />
+    <option name="x" value="85" />
+    <option name="y" value="54" />
     <option name="width" value="1746" />
     <option name="height" value="923" />
   </component>
@@ -346,12 +346,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="110" y="49" width="1746" height="923" extended-state="1" />
+    <frame x="85" y="54" width="1746" height="923" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32841328" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -365,7 +366,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -411,27 +411,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/yii/blog/protected/controllers/BindController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="11" selection-start="8444" selection-end="8444" vertical-scroll-proportion="0.0" vertical-offset="2300" max-vertical-offset="2300">
-          <folding>
-            <element signature="n#actionIndex#0;n#BindController#0;n#!!top" expanded="false" />
-            <element signature="n#actions#0;n#BindController#0;n#!!top" expanded="false" />
-            <element signature="e#855#891#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/yii/blog/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="2575" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/haoxiang/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="46" selection-start="4735" selection-end="4735" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4125">
           <folding>
-            <marker date="1423529943506" expanded="true" signature="4802:5039" placeholder="..." />
+            <marker date="1423536223943" expanded="true" signature="5030:5267" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -456,7 +440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="39" selection-start="4511" selection-end="4511" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4125">
           <folding>
-            <marker date="1423529943506" expanded="true" signature="4802:5039" placeholder="..." />
+            <marker date="1423536223943" expanded="true" signature="5030:5267" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -476,7 +460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="39" selection-start="4511" selection-end="4511" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4125">
           <folding>
-            <marker date="1423529943506" expanded="true" signature="4802:5039" placeholder="..." />
+            <marker date="1423536223943" expanded="true" signature="5030:5267" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -543,7 +527,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="52" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="3925">
           <folding>
-            <marker date="1423529943506" expanded="true" signature="4802:5039" placeholder="..." />
+            <marker date="1423536223943" expanded="true" signature="5030:5267" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -662,20 +646,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.441176" vertical-offset="525" max-vertical-offset="4600" />
       </provider>
     </entry>
-    <entry file="file://F:/yii/新建文件夹/blog/protected/controllers/BindController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="3" selection-start="1147" selection-end="4858" vertical-scroll-proportion="0.2368065" vertical-offset="750" max-vertical-offset="5400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/yii/新建文件夹/blog/protected/views/client/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="15" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.5678192" vertical-offset="873" max-vertical-offset="1625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/yii/blog/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="9" selection-start="2929" selection-end="2929" vertical-scroll-proportion="3.6197565" vertical-offset="0" max-vertical-offset="4975">
@@ -750,16 +720,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/haoxiang/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="92" selection-start="4430" selection-end="4438" vertical-scroll-proportion="-10.705882" vertical-offset="2061" max-vertical-offset="4175">
+        <state line="83" column="45" selection-start="3637" selection-end="3637" vertical-scroll-proportion="10.617647" vertical-offset="2436" max-vertical-offset="4250">
           <folding>
-            <marker date="1423529943506" expanded="true" signature="4802:5039" placeholder="..." />
+            <marker date="1423536223943" expanded="true" signature="5030:5267" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://F:/yii/blog/protected/controllers/BindController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="55" selection-start="8219" selection-end="8219" vertical-scroll-proportion="0.32341" vertical-offset="3111" max-vertical-offset="4575">
+        <state line="113" column="18" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.811908" vertical-offset="1575" max-vertical-offset="4825">
           <folding>
             <element signature="n#actionIndex#0;n#BindController#0;n#!!top" expanded="false" />
             <element signature="n#actions#0;n#BindController#0;n#!!top" expanded="false" />
