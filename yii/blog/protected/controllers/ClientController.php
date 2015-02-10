@@ -6,7 +6,7 @@ class ClientController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column1';
+	public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -27,7 +27,7 @@ class ClientController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('delete','admin','index','view'),
+				'actions'=>array('index','view','admin'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -35,7 +35,7 @@ class ClientController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array(),
+				'actions'=>array('delete'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users

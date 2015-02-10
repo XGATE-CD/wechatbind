@@ -10,10 +10,28 @@ Target Server Type    : MYSQL
 Target Server Version : 50538
 File Encoding         : 65001
 
-Date: 2015-02-09 09:53:26
+Date: 2015-02-10 10:04:09
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `demo`
+-- ----------------------------
+DROP TABLE IF EXISTS `demo`;
+CREATE TABLE `demo` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `mobile` varchar(20) NOT NULL DEFAULT '好' COMMENT '手机号码',
+  `code` varchar(7) NOT NULL DEFAULT '不' COMMENT '验证码',
+  `openid` varchar(50) NOT NULL DEFAULT '打' COMMENT '用户id',
+  `time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '时间',
+  `city` enum('否','是') NOT NULL DEFAULT '否' COMMENT '地址',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of demo
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `tbl_client`
@@ -21,19 +39,20 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `tbl_client`;
 CREATE TABLE `tbl_client` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `username` varchar(100) NOT NULL DEFAULT '' COMMENT '用户昵称',
   `mobile` varchar(20) NOT NULL DEFAULT '' COMMENT '手机号码',
   `code` varchar(7) NOT NULL DEFAULT '' COMMENT '验证码',
   `openid` varchar(50) NOT NULL DEFAULT '' COMMENT '用户id',
+  `address` varchar(100) NOT NULL DEFAULT '' COMMENT '用户地址',
   `time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '时间',
-  `flag` tinyint(10) unsigned NOT NULL DEFAULT '0',
+  `flag` enum('否','是') NOT NULL DEFAULT '否' COMMENT '是否激活',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=125 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_client
 -- ----------------------------
-INSERT INTO `tbl_client` VALUES ('115', '15208245846', '448593', 'op7b7jhPBIn-BuyOorQpWwz333k4', '1421652985', '1');
-INSERT INTO `tbl_client` VALUES ('116', '15902858339', '304347', 'op7b7jnIU-TBdHv_hnLlZutAl6hQ', '1421976365', '0');
+INSERT INTO `tbl_client` VALUES ('124', '惜翼', '15208245846', '026335', 'op7b7jhPBIn-BuyOorQpWwz333k4', '成都', '1423533949', '是');
 
 -- ----------------------------
 -- Table structure for `tbl_comment`

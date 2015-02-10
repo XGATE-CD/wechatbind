@@ -5,9 +5,11 @@
  *
  * The followings are the available columns in table '{{client}}':
  * @property string $id
+ * @property string $username
  * @property string $mobile
  * @property string $code
  * @property string $openid
+ * @property string $address
  * @property string $time
  * @property string $flag
  */
@@ -38,13 +40,15 @@ class Client extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('username, address', 'length', 'max'=>100),
 			array('mobile', 'length', 'max'=>20),
 			array('code', 'length', 'max'=>7),
 			array('openid', 'length', 'max'=>50),
-			array('time, flag', 'length', 'max'=>10),
+			array('time', 'length', 'max'=>10),
+			array('flag', 'length', 'max'=>3),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, mobile, code, openid, time, flag', 'safe', 'on'=>'search'),
+			array('id, username, mobile, code, openid, address, time, flag', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,9 +70,11 @@ class Client extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'username' => 'Username',
 			'mobile' => 'Mobile',
 			'code' => 'Code',
 			'openid' => 'Openid',
+			'address' => 'Address',
 			'time' => 'Time',
 			'flag' => 'Flag',
 		);
@@ -86,9 +92,11 @@ class Client extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
+		$criteria->compare('username',$this->username,true);
 		$criteria->compare('mobile',$this->mobile,true);
 		$criteria->compare('code',$this->code,true);
 		$criteria->compare('openid',$this->openid,true);
+		$criteria->compare('address',$this->address,true);
 		$criteria->compare('time',$this->time,true);
 		$criteria->compare('flag',$this->flag,true);
 

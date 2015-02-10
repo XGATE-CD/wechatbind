@@ -19,9 +19,11 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
+		'username',
 		'mobile',
 		'code',
 		'openid',
+		'address',
 		'time',
 		'flag',
 	),

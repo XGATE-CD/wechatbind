@@ -35,12 +35,23 @@ class BindController extends Controller{
 
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>接收参数并验证开始<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    public function actionCheckMobile(){
+    public function actionCheckMobile(){    //    $result = json_decode($result,true);
         $client = new Client();
-        $openid = $_POST['openid'];
-        $openid = $this->arr2str($openid);
-        $mobile = $_POST['mobile'];
+        $openid = $_POST['openid'];           //获取用户ID
+        $openid = $this->arr2str($openid);     //将数组转换成字符串$openid = 'op7b7jnIU-TBdHv_hnLlZutAl6hQ';
+        $mobile = $_POST['mobile'];           //获取用户输入内容  $mobile = 15902858339;
+        $APPID = $_POST['appId'];             //获取微信appid  $APPID = 'wxe5bed39047a398ab';
+        $APPSECRET = $_POST['appsecret'];     //获取微信appsecret $APPSECRET = '312eb4e031f30a0010cc8f731d799aac';
         if(!empty($_POST)){
+            $TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$APPID}&secret={$APPSECRET}";
+            $json = file_get_contents($TOKEN_URL);   //执行url地址
+            $result = json_decode($json,true);       //将得到的数据转换成数据
+            $access_token = $result['access_token'];  //出去得到access_token
+            $user_list_url = "http://api.weixin.qq.com/cgi-bin/user/info?access_token={$access_token}&openid={$openid}&lang=zh_CN";
+            $user_lists = file_get_contents($user_list_url);   //执行url地址
+            $users = json_decode($user_lists,true);      //将得到的数据转换成数据
+            $username = $users['nickname'];      //取出用户的昵称
+            $address = $users['city'];           //取出用户的地址
             if(preg_match("/^13[0-9]{1}[0-9]{8}$|15[0-9]{1}[0-9]{8}$|18[0-9]{9}|16[0-9]$/",$mobile)){
                 $criteria=new CDbCriteria;
                 $criteria->select='openid,mobile';
@@ -48,14 +59,16 @@ class BindController extends Controller{
                 $criteria->params=array(':openId'=>$openid,':Mobile'=>$mobile); //复制给  select mobile,openid from tbl_client where openid=openid or mobile=mobile
                 $weChatUser=Client::model()->find($criteria);
                 if(isset($weChatUser['mobile'])){
-                    $client->updateAll(array('mobile'=>$mobile),'openid=:openId',array(':openId'=>$openid));
-                }else{
+                    $client->updateAll(array('mobile'=>$mobile,'username'=>$username,'address'=>$address),'openid=:openId',array(':openId'=>$openid));
+                }else{//alter table brand add column logo varchar(100) not null default '' comment 'LOGO地址' after name;
                     $client->mobile = $mobile;
                     $client->openid = $openid;
+                    $client->username = $username;
+                    $client->address = $address;
                     $client->time = time();
                     $client->save();
                 }
-                $content = "您的手机号码为：".$mobile.",确认请回复【1】，如果有误，请重新点击【会员专区】->【手机绑定】";
+                $content = "尊敬的:".$username."您好,您的手机号码为：".$mobile.",确认请回复【1】，如果有误，请重新点击【会员专区】->【手机绑定】";
             } else if(preg_match("/^[0-9]{8}$/",$mobile)){
                 $criteria=new CDbCriteria;
                 $criteria->select='openid,mobile';
@@ -70,7 +83,7 @@ class BindController extends Controller{
                     $client->time = time();
                     $client->save();
                 }
-                $content = "您的手机号码为：".$mobile.",确认请回复【1】，如果有误，请重新点击【会员专区】->【手机绑定】";
+                $content = "尊敬的:".$username."您好,您的手机号码为：".$mobile.",确认请回复【1】，如果有误，请重新点击【会员专区】->【手机绑定】";
             }else{
                 $content = "对不起，您输入的手机号码格式不正确。如需绑定请重新点击【会员专区】->【手机绑定】";
             }
@@ -110,7 +123,8 @@ class BindController extends Controller{
             $weChatUser=Client::model()->find($criteria);
             if(isset($weChatUser)) {
                 $client =  new Client();
-                $client->updateAll(array('flag'=>1),'openid=:openId',array(':openId'=>$openid[0]));
+                $yes = '是';
+                $client->updateAll(array('flag'=>$yes),'openid=:openId',array(':openId'=>$openid[0]));
                 $result = '恭喜您已绑定成功!';
             }else{
                 $result = '您输入不正确,请重新输入验证码,或者验证已超时.重新点击【会员专区】->【手机绑定】!';
@@ -143,7 +157,7 @@ class BindController extends Controller{
            if($weChatUser){
                 $mobile = $weChatUser->attributes['mobile'];    //从查询出来的数据中获取用户的手机号码
                         $flag = $weChatUser->attributes['flag'];    //从查询出来的数据中获取用户的手机号码
-                        if($flag==0 && !empty($mobile)){
+                        if($flag=='否' && !empty($mobile)){
                                 $client = new Client();
                                 $client->updateAll(array('code'=>$authnum,'time'=>time()+300),'openid=:openId',array(':openId'=>$openid));
                         //>>>>>>>>>>>>>>>>>>发送短信代码<<<<<<<<<<<<<<<<<
